@@ -1,0 +1,7 @@
+{
+  "name": "Tutsplus_Pattern_Library",
+  "version": "1.0.0",
+  "dependencies": {
+    "fontawesome": "latest"
+  }
+}
