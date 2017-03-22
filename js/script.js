@@ -44,4 +44,23 @@ $( function() {
     $( this ).parent( "li" ).addClass( "active" ).siblings().removeClass( "active" );
   });
 
+
+  /**
+   * Accordion
+   */
+   $( ".accordion-element-title" ).on("click", function(e) {
+     e.preventDefault();
+
+     // Get the target accordion.
+     var targetAccordion = $( this ).attr( "href" );
+
+     // Collapse all accordion elements.
+     $( ".accordion-element-title" ).removeClass( "active" );
+     $( ".accordion-element-content" ).hide();
+
+     // show the targeted element only.
+     $( this ).addClass( "active" );
+     $( targetAccordion ).show();
+   });
+
 } );
