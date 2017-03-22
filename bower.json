@@ -1,7 +1,8 @@
 {
-  "name": "Tutsplus_Pattern_Library",
+  "name": "tutsplus_pattern_library",
   "version": "1.0.0",
   "dependencies": {
-    "fontawesome": "latest"
+    "fontawesome": "latest",
+    "superfish": "1.7.6"
   }
 }
