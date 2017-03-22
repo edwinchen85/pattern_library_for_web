@@ -21,10 +21,27 @@ $( function() {
    /**
     * Animations.
     **/
-  $( "#demo-animations" ).find( ".demo-col" ).on("click", function() {
-    var $this = $( this );
+   $( "#demo-animations" ).find( ".demo-col" ).on("click", function() {
+     var $this = $( this );
 
-    $this.addClass( "animated " + $this.text() );
+     $this.addClass( "animated " + $this.text() );
+   });
+
+
+  /**
+   * Tabs.
+   **/
+  $( ".tabs-links a" ).on("click", function(e) {
+    e.preventDefault();
+
+    // Get the target tab
+    var newTab = $( this ).attr( "href" );
+
+    // Show the targeted tab content while hiding the rest
+    $( newTab ).show().siblings().hide();
+
+    // Add the active class to the parent list item while removing it from the rest
+    $( this ).parent( "li" ).addClass( "active" ).siblings().removeClass( "active" );
   });
 
 } );
