@@ -4,6 +4,7 @@
   "dependencies": {
     "fontawesome": "latest",
     "superfish": "1.7.6",
-    "animate.css": "latest"
+    "animate.css": "latest",
+    "jquery-cycle2": "latest"
   }
 }
